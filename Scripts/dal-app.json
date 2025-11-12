@@ -1,0 +1,13 @@
+{
+    "name": "dal-app",
+    "apiProducts": [
+        "dal"
+    ],
+    "callbackUrl": "",
+    "attributes": [
+        {
+            "name": "DisplayName",
+            "value": "dal-app"
+        }
+    ]
+}
