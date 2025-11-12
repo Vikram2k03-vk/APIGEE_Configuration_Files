@@ -30,6 +30,17 @@
         "interval" : 11,
         "timeUnit" : "second"
       }
+    }, {
+      "apiSource" : "domain-api-json-v1-getbillinginfo",
+      "operations" : [ {
+        "resource" : "/",
+        "methods" : [ "POST" ]
+      } ],
+      "quota" : {
+        "limit" : "45",
+        "interval" : 11,
+        "timeUnit" : "second"
+      }
     } ],
     "operationConfigType" : "proxy"
   },
