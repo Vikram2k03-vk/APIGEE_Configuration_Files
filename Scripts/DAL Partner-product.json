@@ -1,0 +1,27 @@
+{
+  "name" : "DAL Partner",
+  "displayName" : "DAL Partner",
+  "approvalType" : "auto",
+  "attributes" : [ {
+    "name" : "access",
+    "value" : "public"
+  } ],
+  "environments" : [ "" ],
+  "operationGroup" : {
+    "operationConfigs" : [ {
+      "apiSource" : "domain-api-json-v1-getbillinfo",
+      "operations" : [ {
+        "resource" : "/",
+        "methods" : [ "POST" ]
+      } ],
+      "quota" : {
+        "limit" : "45",
+        "interval" : 11,
+        "timeUnit" : "second"
+      }
+    } ],
+    "operationConfigType" : "proxy"
+  },
+  "createdAt" : null,
+  "lastModifiedAt" : null
+}
