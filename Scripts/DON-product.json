@@ -1,0 +1,27 @@
+{
+  "name" : "DON",
+  "displayName" : "DON",
+  "approvalType" : "auto",
+  "attributes" : [ {
+    "name" : "access",
+    "value" : "public"
+  } ],
+  "environments" : [ "" ],
+  "operationGroup" : {
+    "operationConfigs" : [ {
+      "apiSource" : "domain-api-json-v1-getorderinfo",
+      "operations" : [ {
+        "resource" : "/",
+        "methods" : [ "POST" ]
+      } ],
+      "quota" : {
+        "limit" : "67",
+        "interval" : 21,
+        "timeUnit" : "second"
+      }
+    } ],
+    "operationConfigType" : "proxy"
+  },
+  "createdAt" : null,
+  "lastModifiedAt" : null
+}
