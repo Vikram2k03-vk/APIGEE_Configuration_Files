@@ -1,0 +1,27 @@
+{
+  "name" : "GUS",
+  "displayName" : "GUS",
+  "approvalType" : "auto",
+  "attributes" : [ {
+    "name" : "access",
+    "value" : "public"
+  } ],
+  "environments" : [ "" ],
+  "operationGroup" : {
+    "operationConfigs" : [ {
+      "apiSource" : "domain-api-json-v1-getsavingsinfo",
+      "operations" : [ {
+        "resource" : "/",
+        "methods" : [ "POST" ]
+      } ],
+      "quota" : {
+        "limit" : "100",
+        "interval" : 10,
+        "timeUnit" : "second"
+      }
+    } ],
+    "operationConfigType" : "proxy"
+  },
+  "createdAt" : null,
+  "lastModifiedAt" : null
+}
