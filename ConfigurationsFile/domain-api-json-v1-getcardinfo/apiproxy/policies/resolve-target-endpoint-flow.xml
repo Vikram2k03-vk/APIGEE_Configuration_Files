@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FlowCallout name="resolve-target-endpoint-flow" continueOnError="false" enabled="true">
+    <DisplayName>resolve-target-endpoint-flow</DisplayName>
+    <SharedFlowBundle>test1</SharedFlowBundle>
+</FlowCallout>

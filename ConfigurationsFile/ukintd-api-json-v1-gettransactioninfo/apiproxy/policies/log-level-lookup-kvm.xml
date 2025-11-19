@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations continueOnError="false" enabled="true" name="log-level-lookup-kvm" mapIdentifier="proxy-log-level-kvm">
+    <Get assignTo="flow.custom.flagValue">
+        <Key>
+            <Parameter ref="apiproxy.name"/>
+        </Key>
+    </Get>
+    <Scope>environment</Scope>
+</KeyValueMapOperations>

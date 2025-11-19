@@ -1,0 +1,27 @@
+{
+  "name" : "SAN",
+  "displayName" : "SAN",
+  "approvalType" : "auto",
+  "attributes" : [ {
+    "name" : "access",
+    "value" : "public"
+  } ],
+  "environments" : [ "" ],
+  "operationGroup" : {
+    "operationConfigs" : [ {
+      "apiSource" : "domain-api-json-v1-getcardinfo",
+      "operations" : [ {
+        "resource" : "/",
+        "methods" : [ "POST" ]
+      } ],
+      "quota" : {
+        "limit" : "78",
+        "interval" : 13,
+        "timeUnit" : "second"
+      }
+    } ],
+    "operationConfigType" : "proxy"
+  },
+  "createdAt" : null,
+  "lastModifiedAt" : null
+}

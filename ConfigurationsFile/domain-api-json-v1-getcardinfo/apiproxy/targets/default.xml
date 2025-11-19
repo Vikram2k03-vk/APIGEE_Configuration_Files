@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TargetEndpoint name="default">
+    <Description></Description>
+    <DefaultFaultRule/>
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>audit-log-debug-flow-pretarget</Name>
+                <Condition>TargetPreFlow</Condition>
+            </Step>
+            <Step>
+                <Name>resolve-target-endpoint-flow</Name>
+            </Step>
+        </Request>
+        <Response/>
+    </PreFlow>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response>
+            <Step>
+                <Name>audit-log-debug-flow-posttarget</Name>
+                <Condition>TargetPostFlow</Condition>
+            </Step>
+        </Response>
+    </PostFlow>
+    <Flows></Flows>
+    <HTTPTargetConnection>
+        <URL>{target.url}</URL>
+        <SSLInfo>
+            <Enabled>{ssl.enabled}</Enabled>
+            <ClientAuthEnabled>false</ClientAuthEnabled>
+            <TrustStore>{ssl.truststore}</TrustStore>
+            <IgnoreValidationErrors>true</IgnoreValidationErrors>
+        </SSLInfo>
+        <Properties>
+            <Property name="connect.timeout.millis">3000</Property>
+            <Property name="io.timeout.millis"/>
+            <Property name="ignore.allow.header.for.405">true</Property>
+        </Properties>
+    </HTTPTargetConnection>
+</TargetEndpoint>

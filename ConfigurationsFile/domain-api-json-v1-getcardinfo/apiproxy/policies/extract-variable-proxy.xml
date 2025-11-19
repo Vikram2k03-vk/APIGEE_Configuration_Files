@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables continueOnError="false" enabled="true" name="extract-variable-proxy">
+    <Source>request</Source>
+    <Header name="apikey">
+        <Pattern ignoreCase="true">{apikey}</Pattern>
+    </Header>
+    <Variable name="request.verb">
+        <Pattern>{origVerb}</Pattern>
+    </Variable>
+    <VariablePrefix>flow.custom</VariablePrefix>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</ExtractVariables>

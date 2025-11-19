@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description/>
+    <DefaultFaultRule name="default-fault">
+        <Step>
+            <Name>flow-callout-cors-headers</Name>
+        </Step>
+        <Step>
+            <Name>flow-callout-error-fault-handler-json</Name>
+        </Step>
+        <Step>
+            <Name>flow-callout-audit-log-error</Name>
+        </Step>
+        <AlwaysEnforce>true</AlwaysEnforce>
+    </DefaultFaultRule>
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>security-derive-client-flow</Name>
+                <Condition>(request.header.apikey == "")</Condition>
+            </Step>
+            <Step>
+                <Name>java-script-businesskey</Name>
+            </Step>
+            <Step>
+                <Name>extract-variable-proxy</Name>
+            </Step>
+            <Step>
+                <Name>verify-api-key</Name>
+            </Step>
+            <Step>
+                <Name>log-level-lookup-kvm</Name>
+            </Step>
+            <Step>
+                <Name>audit-log-debug-flow-preproxy</Name>
+                <Condition>ProxyPreFlow</Condition>
+            </Step>
+            <Step>
+                <Name>throttle-spike-arrest-flow</Name>
+            </Step>
+            <Step>
+                <Name>throttle-quota-flow</Name>
+            </Step>
+            <Step>
+                <Name>security-json-token-check-flow</Name>
+                <Condition>(environment == "external")</Condition>
+            </Step>
+            <Step>
+                <Name>transform-request-header-flow</Name>
+            </Step>
+        </Request>
+        <Response/>
+    </PreFlow>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response>
+            <Step>
+                <Name>audit-log-debug-flow-postproxy</Name>
+                <Condition>ProxyPostFlow</Condition>
+            </Step>
+            <Step>
+                <Name>audit-log-info-flow</Name>
+            </Step>
+        </Response>
+    </PostFlow>
+    <Flows/>
+    <HTTPProxyConnection>
+        <BasePath>/billing/v2</BasePath>
+        <VirtualHost>internal</VirtualHost>
+        <VirtualHost>external</VirtualHost>
+        <Properties/>
+    </HTTPProxyConnection>
+    <RouteRule name="default">
+        <TargetEndpoint>default</TargetEndpoint>
+    </RouteRule>
+</ProxyEndpoint>
