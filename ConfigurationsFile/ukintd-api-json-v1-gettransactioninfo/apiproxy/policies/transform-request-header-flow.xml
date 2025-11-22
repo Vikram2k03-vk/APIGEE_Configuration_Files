@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<FlowCallout name="transform-request-header-flow" continueOnError="false" enabled="true">
-    <DisplayName>transform-request-header-flow</DisplayName>
-    <SharedFlowBundle>test2</SharedFlowBundle>
-</FlowCallout>

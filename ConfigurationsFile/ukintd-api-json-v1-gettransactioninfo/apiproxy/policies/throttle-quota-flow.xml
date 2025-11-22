@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<FlowCallout name="throttle-quota-flow" continueOnError="false" enabled="true">
-    <DisplayName>throttle-quota-flow</DisplayName>
-    <SharedFlowBundle></SharedFlowBundle>
-</FlowCallout>

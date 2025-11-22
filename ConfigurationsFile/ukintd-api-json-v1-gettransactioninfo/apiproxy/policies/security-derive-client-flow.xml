@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<FlowCallout name="security-derive-client-flow" continueOnError="false" enabled="true">
-    <DisplayName>security-derive-client-flow</DisplayName>
-    <SharedFlowBundle>test2</SharedFlowBundle>
-</FlowCallout>

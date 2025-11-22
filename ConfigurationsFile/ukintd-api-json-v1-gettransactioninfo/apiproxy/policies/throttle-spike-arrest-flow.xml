@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<FlowCallout name="throttle-spike-arrest-flow" continueOnError="false" enabled="true">
-    <DisplayName>throttle-spike-arrest-flow</DisplayName>
-    <SharedFlowBundle>test2</SharedFlowBundle>
-</FlowCallout>

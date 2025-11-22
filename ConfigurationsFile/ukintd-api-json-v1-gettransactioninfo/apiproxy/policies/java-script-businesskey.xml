@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Javascript continueOnError="false" enabled="true" timeLimit="200" name="java-script-businesskey">
-    <DisplayName>java-script-businesskey</DisplayName>
-    <Properties></Properties>
-    <ResourceURL>jsc://java-script-businesskey.js</ResourceURL>
-</Javascript>

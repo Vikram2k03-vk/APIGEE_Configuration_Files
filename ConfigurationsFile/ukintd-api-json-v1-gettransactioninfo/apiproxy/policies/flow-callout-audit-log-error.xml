@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<FlowCallout name="flow-callout-audit-log-error" continueOnError="false" enabled="true">
-    <DisplayName>flow-callout-audit-log-error</DisplayName>
-    <SharedFlowBundle>ukintd-sf-audit-log-error</SharedFlowBundle>
-</FlowCallout>

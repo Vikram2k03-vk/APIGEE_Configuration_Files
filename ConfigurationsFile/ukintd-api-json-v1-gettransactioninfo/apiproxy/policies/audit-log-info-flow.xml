@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<FlowCallout name="audit-log-info-flow" continueOnError="false" enabled="true">
-    <DisplayName>audit-log-info-flow</DisplayName>
-    <SharedFlowBundle>test1</SharedFlowBundle>
-</FlowCallout>

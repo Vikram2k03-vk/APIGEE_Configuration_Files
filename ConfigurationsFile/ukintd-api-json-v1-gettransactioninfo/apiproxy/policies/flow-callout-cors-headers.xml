@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<FlowCallout name="flow-callout-cors-headers" continueOnError="false" enabled="true">
-    <DisplayName>flow-callout-cors-headers</DisplayName>
-    <SharedFlowBundle>ukintd-sf-cors-headers</SharedFlowBundle>
-</FlowCallout>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<FlowCallout name="audit-log-debug-flow-pretarget" continueOnError="false" enabled="true">
-    <DisplayName>audit-log-debug-flow-pretarget</DisplayName>
-    <SharedFlowBundle>test1</SharedFlowBundle>
-</FlowCallout>
