@@ -30,6 +30,17 @@
         "interval" : 13,
         "timeUnit" : "second"
       }
+    }, {
+      "apiSource" : "domain-api-json-v1-getcartinfo",
+      "operations" : [ {
+        "resource" : "/",
+        "methods" : [ "POST" ]
+      } ],
+      "quota" : {
+        "limit" : "78",
+        "interval" : 13,
+        "timeUnit" : "second"
+      }
     } ],
     "operationConfigType" : "proxy"
   },
