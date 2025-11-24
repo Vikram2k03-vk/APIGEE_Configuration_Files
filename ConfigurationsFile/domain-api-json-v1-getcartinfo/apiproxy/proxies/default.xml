@@ -65,7 +65,7 @@
     </PostFlow>
     <Flows/>
     <HTTPProxyConnection>
-        <BasePath>/billing/v2</BasePath>
+        <BasePath>/billing/v1</BasePath>
         <VirtualHost>internal</VirtualHost>
         <VirtualHost>external</VirtualHost>
         <Properties/>
