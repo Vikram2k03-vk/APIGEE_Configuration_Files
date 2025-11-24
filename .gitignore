@@ -1,3 +1,5 @@
 Gateway_Migration-1.0.0-SNAPSHOT.jar
 Gateway_Migration_AI.py
 ado_extract.json
+app.py
+.env
