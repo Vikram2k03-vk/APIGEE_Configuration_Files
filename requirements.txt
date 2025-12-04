@@ -1,0 +1,16 @@
+Flask
+requests
+openai
+python-dotenv
+pydantic
+pandas
+
+azure-devops
+msrest
+azure-core
+isodate
+
+urllib3
+charset-normalizer
+certifi
+idna
