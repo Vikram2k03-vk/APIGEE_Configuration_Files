@@ -1,0 +1,27 @@
+{
+  "name" : "DSP",
+  "displayName" : "DSP",
+  "approvalType" : "auto",
+  "attributes" : [ {
+    "name" : "access",
+    "value" : "public"
+  } ],
+  "environments" : [ "" ],
+  "operationGroup" : {
+    "operationConfigs" : [ {
+      "apiSource" : "domain-api-json-v1-default",
+      "operations" : [ {
+        "resource" : "/",
+        "methods" : [ "POST" ]
+      } ],
+      "quota" : {
+        "limit" : "78",
+        "interval" : 13,
+        "timeUnit" : "second"
+      }
+    } ],
+    "operationConfigType" : "proxy"
+  },
+  "createdAt" : null,
+  "lastModifiedAt" : null
+}
